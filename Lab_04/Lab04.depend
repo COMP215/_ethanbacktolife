@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1474519389 source:c:\users\ethan\desktop\algorithms\lab04\binarysearchtree.cpp
+	"binarysearchtree.hpp"
+	<string>
+
+1474518749 c:\users\ethan\desktop\algorithms\lab04\binarysearchtree.hpp
+	<stdio.h>
+	<string>
+
+1474584746 source:c:\users\ethan\desktop\algorithms\_ethanbacktolife\lab_04\binarysearchtree\binarysearchtree.cpp
+	"binarysearchtree.hpp"
+	<iostream>
+
+1474518749 c:\users\ethan\desktop\algorithms\_ethanbacktolife\lab_04\binarysearchtree\binarysearchtree.hpp
+	<stdio.h>
+	<string>
+
+1474930947 source:c:\users\ethan\desktop\algorithms\_ethanbacktolife\lab_04\binarysearchtree.cpp
+	"binarysearchtree.hpp"
+	<iostream>
+
+1474518749 c:\users\ethan\desktop\algorithms\_ethanbacktolife\lab_04\binarysearchtree.hpp
+	<stdio.h>
+	<string>
+
+1474925559 source:c:\users\ethan\desktop\algorithms\_ethanbacktolife\lab_04\linkedlist.cpp
+	"linkedlist.h"
+	<string>
+
+1474915601 source:c:\users\ethan\desktop\algorithms\_ethanbacktolife\lab_04\main.cpp
+	<fstream>
+	"binarysearchtree.hpp"
+	"LinkedList.h"
+	<stdlib.h>
+
+1474860602 c:\users\ethan\desktop\algorithms\_ethanbacktolife\lab_04\linkedlist.cpp
+	"linkedlist.h"
+	<string>
+
+1474860602 c:\users\ethan\desktop\algorithms\_ethanbacktolife\lab_04\linkedlist.h
+	<stdio.h>
+	<string>
+	<iostream>
+

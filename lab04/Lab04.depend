@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1474519389 source:c:\users\ethan\desktop\algorithms\lab04\binarysearchtree.cpp
+	"binarysearchtree.hpp"
+	<string>
+
+1474518749 c:\users\ethan\desktop\algorithms\lab04\binarysearchtree.hpp
+	<stdio.h>
+	<string>
+
