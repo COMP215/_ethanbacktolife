@@ -29,3 +29,9 @@
 *.app
 
 I edited this here
+
+# CodeBlocks Specific?
+*.save
+*.depend
+*.txt
+*.o
