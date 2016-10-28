@@ -21,3 +21,10 @@ Node2::~Node2()
 
 }
 
+Node2& Node2::operator=(/*in*/const Node2& node)
+{
+    this->data_ = node.data_;
+    this->edges_ = node.edges_;
+
+    return *this;
+}

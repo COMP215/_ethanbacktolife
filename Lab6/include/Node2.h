@@ -17,6 +17,7 @@ class Node2
        ~Node2();
        std::string data_;
        std::vector<edge> edges_;
+       Node2& operator=(/*in*/const Node2& node);
 };
 
 
