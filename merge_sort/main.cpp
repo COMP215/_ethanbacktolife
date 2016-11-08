@@ -47,14 +47,14 @@ void bubbleSort(vector<short>& unsorted_array)
 }
 
 short findMidpoint(vector<short> numbers) // returns the index of numbers which, if numbers were split down the middle into two arrays,
-{   short index;                    // would contain the first element of the "right-hand" array
+{   short index;                          // would contain the first element of the "right-hand" array
     if (numbers.size() % 2 == 0)
     {
         index = numbers.size() / 2;
     }
     else
     {
-        index = (numbers.size() + 1) / 2; //"left-hand" array is one larger than "right-hand" array
+        index = (numbers.size() - 1) / 2; //"left-hand" array is one smaller than "right-hand" array
     }
 }
 
@@ -83,6 +83,7 @@ vector<short> mergeSortRecursive(vector<short> new_array)
         {
             array1.push_back(new_array.at(i));
         }
+
         for (short i = array2_start; i < new_array.size(); i++)
         {
             array2.push_back(new_array.at(i));
@@ -92,8 +93,9 @@ vector<short> mergeSortRecursive(vector<short> new_array)
         sorted_array2 = mergeSortRecursive(array2);
         sorted_array1_size = sorted_array1.size();
         sorted_array2_size = sorted_array2.size();
-        new_sorted_array_size =  sorted_array1.size() + sorted_array2.size();
-        while (index1 != sorted_array1_size && index2 != sorted_array2_size)
+        index1 = 0;
+        index2 = 0;
+        while (index1 < sorted_array1_size && index2 < sorted_array2_size)
         {
             if (sorted_array1.at(index1) < sorted_array2.at(index2))
             {
@@ -105,7 +107,9 @@ vector<short> mergeSortRecursive(vector<short> new_array)
                 new_sorted_array.push_back(sorted_array2.at(index2));
                 index2++;
             }
+
         }
+
         return new_sorted_array;
     }
 }
@@ -117,15 +121,20 @@ void mergeSort(vector<short>& unsorted_array) //
 
 int main()
 {
+    cout << "findMidpoint test:" << endl;
     vector<short> numbers;
     numbers.push_back(3);
+    cout << "size: " << numbers.size() << " - midpoint: " << findMidpoint(numbers) << endl;
     numbers.push_back(2);
-    numbers.push_back(1);
+    cout << "size: " << numbers.size() << " - midpoint: " << findMidpoint(numbers) << endl;
+    numbers.push_back(17);
+    cout << "size: " << numbers.size() << " - midpoint: " << findMidpoint(numbers) << endl;
     numbers.push_back(7);
+    cout << "size: " << numbers.size() << " - midpoint: " << findMidpoint(numbers) << endl;
     numbers.push_back(6);
     numbers.push_back(6);
     numbers.push_back(10);
-    numbers.push_back(1);
+    numbers.push_back(17);
     numbers.push_back(2);
     numbers.push_back(3);
 
